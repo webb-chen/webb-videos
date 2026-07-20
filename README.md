@@ -1,17 +1,15 @@
 <div align="center">
 
-# MoneyPrinterTurbo 💸
+# webb-videos 💸
 
 ### 一站式 AI 短视频生成工具
 
 只需提供视频<b>主题</b>或<b>关键词</b>，即可自动生成视频脚本、匹配素材、生成字幕和背景音乐，并合成高清短视频。
 
-[![Version](https://img.shields.io/github/v/release/webb-videos/MoneyPrinterTurbo?color=blue&label=version)](https://gitee.com/webb-videos/MoneyPrinterTurbo/releases)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://gitee.com/webb-videos/MoneyPrinterTurbo/releases/latest)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](https://gitee.com/webb-videos/webb-videos)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://gitee.com/webb-videos/webb-videos)
 [![Python](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Downloads](https://img.shields.io/github/downloads/webb-videos/MoneyPrinterTurbo/total)](https://gitee.com/webb-videos/MoneyPrinterTurbo/releases/latest)
-
-简体中文 | [English](README-en.md) | [版本发布](https://gitee.com/webb-videos/MoneyPrinterTurbo/releases) | [问题反馈](https://gitee.com/webb-videos/MoneyPrinterTurbo/issues)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
 
 </div>
 
@@ -28,12 +26,42 @@
 - [字幕生成](#字幕生成-)
 - [背景音乐](#背景音乐-)
 - [常见问题](#常见问题-)
-- [反馈建议](#反馈建议-)
 - [许可证](#许可证-)
 
 ---
 
 ## 界面预览 🖥️
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  webb-videos 主界面                                              │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   ┌──────────────────────────────────────────────────────┐     │
+│   │ 🎬 视频主题                                           │     │
+│   │ [ 人工智能如何改变日常生活                         ] │     │
+│   ├──────────────────────────────────────────────────────┤     │
+│   │ 🎨 视频尺寸                                           │     │
+│   │ [●] 竖屏 9:16 (1080x1920)                             │     │
+│   │ [ ] 横屏 16:9 (1920x1080)                             │     │
+│   ├──────────────────────────────────────────────────────┤     │
+│   │ 🤖 AI 模型                                            │     │
+│   │ [ Kimi / Moonshot AI  ▼ ]                             │     │
+│   ├──────────────────────────────────────────────────────┤     │
+│   │ 🎵 语音合成                                           │     │
+│   │ [ Edge TTS (免费)    ▼ ]                             │     │
+│   ├──────────────────────────────────────────────────────┤     │
+│   │ 📜 字幕设置                                           │     │
+│   │ [✓] 自动生成字幕  字体: [ 微软雅黑  ▼ ]               │     │
+│   ├──────────────────────────────────────────────────────┤     │
+│   │ 🎶 背景音乐                                           │     │
+│   │ [ 随机选择   ▼ ]  音量: [■■□□□□□□□□] 30%            │     │
+│   └──────────────────────────────────────────────────────┘     │
+│                                                                 │
+│                    [  🚀 开始生成视频  ]                         │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ### WebUI 界面
 
@@ -47,87 +75,100 @@
 
 ## 功能特性 🎯
 
-### 核心功能
-
-<table>
-<tr>
-<td width="50%">
-<h4>🎬 视频生成</h4>
-<ul>
-<li>✅ AI 自动生成视频脚本</li>
-<li>✅ 支持自定义脚本</li>
-<li>✅ 批量视频生成</li>
-<li>✅ 多种视频尺寸支持</li>
-</ul>
-</td>
-<td width="50%">
-<h4>🎨 视频格式</h4>
-<ul>
-<li>✅ 竖屏 9:16 (1080x1920)</li>
-<li>✅ 横屏 16:9 (1920x1080)</li>
-<li>✅ 可调节片段时长</li>
-<li>✅ 高清视频输出</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<h4>🗣️ 语音合成</h4>
-<ul>
-<li>✅ Edge TTS (免费)</li>
-<li>✅ Azure Speech</li>
-<li>✅ Google Gemini TTS</li>
-<li>✅ ElevenLabs TTS</li>
-</ul>
-</td>
-<td width="50%">
-<h4>📜 字幕生成</h4>
-<ul>
-<li>✅ 自动字幕生成</li>
-<li>✅ 可调整字体、位置</li>
-<li>✅ 自定义颜色、大小</li>
-<li>✅ 多种样式选择</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<h4>🎵 背景音乐</h4>
-<ul>
-<li>✅ 随机音乐选择</li>
-<li>✅ 自定义音乐</li>
-<li>✅ 音量调节</li>
-<li>✅ 多格式支持</li>
-</ul>
-</td>
-<td width="50%">
-<h4>🖼️ 素材来源</h4>
-<ul>
-<li>✅ 本地素材</li>
-<li>✅ Pexels 图库</li>
-<li>✅ Pixabay 图库</li>
-<li>✅ Coverr 视频</li>
-</ul>
-</td>
-</tr>
-</table>
-
-### 使用方式
+### 核心功能矩阵
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                  MoneyPrinterTurbo                  │
-├─────────────────────────────────────────────────────┤
-│                                                     │
-│   🤖 AI Agent      → 智能对话式视频生成           │
-│   🖥️ WebUI         → 图形化界面，直观易用         │
-│   🔌 API           → 程序化接口，集成灵活         │
-│   ⌨️ CLI           → 命令行工具，自动化批处理     │
-│                                                     │
-└─────────────────────────────────────────────────────┘
+                    ┌──────────────────────────────┐
+                    │      webb-videos 功能概览      │
+                    └──────────────────────────────┘
+                                   │
+          ┌────────────────────────┼────────────────────────┐
+          │                        │                        │
+          ▼                        ▼                        ▼
+   ┌──────────────┐        ┌──────────────┐        ┌──────────────┐
+   │   🎬 视频    │        │   🗣️ 语音    │        │   🎨 素材    │
+   ├──────────────┤        ├──────────────┤        ├──────────────┤
+   │ AI 自动生成  │        │ Edge TTS     │        │ 本地素材     │
+   │ 自定义脚本   │        │ Azure TTS    │        │ Pexels       │
+   │ 批量生成     │        │ Gemini TTS   │        │ Pixabay      │
+   │ 多尺寸支持   │        │ ElevenLabs   │        │ Coverr       │
+   └──────────────┘        └──────────────┘        └──────────────┘
+          │                        │                        │
+          └────────────────────────┼────────────────────────┘
+                                   │
+          ┌────────────────────────┼────────────────────────┐
+          │                        │                        │
+          ▼                        ▼                        ▼
+   ┌──────────────┐        ┌──────────────┐        ┌──────────────┐
+   │   📜 字幕    │        │   🎵 音乐    │        │   📤 发布    │
+   ├──────────────┤        ├──────────────┤        ├──────────────┤
+   │ 自动生成     │        │ 随机选择     │        │ TikTok       │
+   │ 样式可调     │        │ 自定义音乐   │        │ Instagram    │
+   │ 字体颜色     │        │ 音量调节     │        │ YouTube      │
+   │ 描边背景     │        │ 多格式支持   │        │ Shorts       │
+   └──────────────┘        └──────────────┘        └──────────────┘
 ```
 
-### 支持的大模型
+### 功能详解
+
+| 模块 | 功能 | 状态 |
+|------|------|------|
+| **视频生成** | AI 自动生成视频脚本 | ✅ |
+| | 支持自定义脚本 | ✅ |
+| | 批量视频生成 | ✅ |
+| | 竖屏 9:16 (1080x1920) | ✅ |
+| | 横屏 16:9 (1920x1080) | ✅ |
+| **语音合成** | Edge TTS (免费) | ✅ |
+| | Azure TTS V2 | ✅ |
+| | Google Gemini TTS | ✅ |
+| | 小米 MiMo TTS | ✅ |
+| | ElevenLabs TTS | ✅ |
+| **字幕生成** | 自动字幕 (edge 模式) | ✅ |
+| | Whisper 转写模式 | ✅ |
+| | 字体/颜色/描边可调 | ✅ |
+| **素材来源** | 本地素材 | ✅ |
+| | Pexels 图库 | ✅ |
+| | Pixabay 图库 | ✅ |
+| | Coverr 视频 | ✅ |
+
+### 四种使用方式
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    webb-videos 使用方式                          │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│    🤖 AI Agent          🖥️ WebUI                               │
+│    ├─ 零配置             ├─ 图形化界面                          │
+│    ├─ 智能对话生成       ├─ 直观易用                            │
+│    ├─ 最省心             ├─ 推荐新手                            │
+│    └─ 适合不想折腾       └─ 可视化操作                          │
+│                                                                 │
+│    🔌 API               ⌨️ CLI                                 │
+│    ├─ RESTful接口        ├─ 命令行工具                          │
+│    ├─ 可集成系统         ├─ 自动化批处理                        │
+│    ├─ 程序化调用         ├─ 适合开发者                          │
+│    └─ 适合二次开发       └─ 脚本自动化                          │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### 支持的 AI 大模型
+
+```
+推荐度排行
+
+⭐⭐⭐⭐⭐  ████████████████████████████  Kimi / Moonshot AI
+⭐⭐⭐⭐⭐  ████████████████████████████  OpenAI
+⭐⭐⭐⭐    ██████████████████████        Google Gemini
+⭐⭐⭐⭐    ██████████████████████        DeepSeek
+⭐⭐⭐⭐    ██████████████████████        阿里云通义千问
+⭐⭐⭐⭐    ██████████████████████        Azure OpenAI
+⭐⭐⭐      ████████████████              火山引擎方舟
+⭐⭐⭐      ████████████████              xAI Grok
+⭐⭐⭐      ████████████████              MiniMax
+⭐⭐⭐      ████████████████              小米 MiMo
+```
 
 | 提供商 | 模型特点 | 推荐指数 |
 |--------|---------|---------|
@@ -145,10 +186,12 @@
 ### 一键发布平台
 
 ```
-📤 自动发布到
-├─ 🎵 TikTok
-├─ 📸 Instagram
-└─ ▶️ YouTube Shorts
+📤 视频生成完成后自动发布
+│
+├─ 🎵 TikTok      → 短视频平台
+├─ 📸 Instagram   → 图片社交平台
+└─ ▶️ YouTube     → 长视频平台
+       └─ Shorts  → 短视频栏目
 ```
 
 ---
@@ -165,56 +208,58 @@
 | **GPU** | 非必须 | 4GB显存 | 8GB显存及以上 |
 | **Python** | 3.11 | 3.11 | 3.11 |
 
-### 📊 性能对比图
+### 性能对比
 
 ```
-视频生成速度对比（相同配置下）
+📊 视频生成速度对比（1分钟视频，相同配置下）
 
-┌─────────────────────────────────────────────────┐
-│                                                 │
-│   无GPU ████████████████████ 120s              │
-│   4GB GPU ████████████ 90s                     │
-│   8GB GPU ████████ 70s                          │
-│                                                 │
-└─────────────────────────────────────────────────┘
+无 GPU        ████████████████████████████████████  120s
+4GB 显存      ██████████████████████████            90s
+8GB 显存      ████████████████████                  70s
+16GB 显存     ██████████████                        55s
+
+📊 批量生成效率（同时生成5个视频）
+
+无 GPU        ████████████████████████████████████████████████████  10min
+4GB 显存      ██████████████████████████████████                    7.5min
+8GB 显存      ████████████████████████████                          6min
+16GB 显存     ██████████████████████                                4.5min
 ```
 
 ---
 
 ## 快速开始 🚀
 
-### 使用方式推荐
+### 推荐使用方式
 
-| 使用场景 | 推荐方式 | 优势 |
-|---------|---------|------|
-| 🚫 不想安装配置 | AI Agent | 零配置，智能生成 |
-| 🪟 Windows用户 | 一键启动包 | 解压即用，快速体验 |
-| 🍎 macOS/Linux用户 | uv部署 | 轻量快速，依赖管理好 |
-| 🐳 需要隔离环境 | Docker部署 | 环境隔离，易于迁移 |
+```
+┌─────────────────────────────────────────────────────┐
+│              选择适合你的使用方式                     │
+├─────────────────────────────────────────────────────┤
+│                                                     │
+│   🚫 不想安装配置                                     │
+│   → 🤖 AI Agent 方式（推荐）                         │
+│                                                     │
+│   🪟 Windows 用户                                    │
+│   → 📦 手动部署（uv）                                │
+│                                                     │
+│   🍎 macOS / Linux 用户                              │
+│   → 📦 手动部署（uv）                                │
+│                                                     │
+│   🐳 需要隔离环境                                    │
+│   → 🐳 Docker 部署                                   │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+```
 
 ### 方式一：使用 AI Agent 生成视频
 
 如果你的 AI Agent 支持读取 Skill 文档并操作本地终端，可以直接发送下面这段话：
 
 ```text
-使用这个 Skill：https://gitee.com/webb-videos/MoneyPrinterTurbo/raw/main/docs/skill/SKILL.md
+使用这个 Skill：https://gitee.com/webb-videos/webb-videos/raw/main/docs/skill/SKILL.md
 帮我生成一个主题为"人工智能如何改变普通人的日常生活"的视频。
 ```
-
-### 方式二：Google Colab 在线运行
-
-免去本地环境配置，点击直接在 Google Colab 中快速体验：
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/webb-videos/MoneyPrinterTurbo/blob/main/docs/MoneyPrinterTurbo.ipynb)
-
-### 方式三：Windows 一键启动包
-
-下载地址：[Gitee Releases](https://gitee.com/webb-videos/MoneyPrinterTurbo/releases/latest)
-
-使用步骤：
-1. 下载并解压（路径不要有中文、特殊字符、空格）
-2. 双击执行 `update.bat` 更新到最新代码
-3. 双击 `start.bat` 启动
 
 ---
 
@@ -227,11 +272,38 @@
 
 ### Docker 部署 🐳
 
+```
+┌──────────────────────────────────────────────────────┐
+│                 Docker 部署流程                       │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│  步骤一：克隆项目                                     │
+│  ┌────────────────────────────────────────────┐     │
+│  │ git clone https://gitee.com/webb-videos/    │     │
+│  │            webb-videos.git                  │     │
+│  │ cd webb-videos                              │     │
+│  └────────────────────────────────────────────┘     │
+│                                                      │
+│  步骤二：启动容器                                     │
+│  ┌────────────────────────────────────────────┐     │
+│  │ docker compose -f                           │     │
+│  │   docker-compose.release.yml up             │     │
+│  └────────────────────────────────────────────┘     │
+│                                                      │
+│  步骤三：访问界面                                     │
+│  ┌────────────────────────────────────────────┐     │
+│  │ WebUI:  http://127.0.0.1:8501               │     │
+│  │ API:    http://127.0.0.1:8080/docs          │     │
+│  └────────────────────────────────────────────┘     │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+```
+
 #### 步骤一：克隆项目
 
 ```shell
-git clone https://gitee.com/webb-videos/MoneyPrinterTurbo.git
-cd MoneyPrinterTurbo
+git clone https://gitee.com/webb-videos/webb-videos.git
+cd webb-videos
 ```
 
 #### 步骤二：启动 Docker
@@ -242,16 +314,57 @@ docker compose -f docker-compose.release.yml up
 
 #### 步骤三：访问界面
 
-- **WebUI**: http://127.0.0.1:8501
-- **API文档**: http://127.0.0.1:8080/docs
+| 服务 | 地址 | 说明 |
+|------|------|------|
+| **WebUI** | http://127.0.0.1:8501 | 图形化界面 |
+| **API文档** | http://127.0.0.1:8080/docs | Swagger文档 |
+| **Redoc** | http://127.0.0.1:8080/redoc | 替代文档 |
 
 ### 手动部署 📦
+
+```
+┌──────────────────────────────────────────────────────┐
+│                 手动部署流程（uv）                     │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│  步骤一：克隆代码                                     │
+│  ┌────────────────────────────────────────────┐     │
+│  │ git clone https://gitee.com/webb-videos/    │     │
+│  │            webb-videos.git                  │     │
+│  │ cd webb-videos                              │     │
+│  └────────────────────────────────────────────┘     │
+│                                                      │
+│  步骤二：创建虚拟环境                                 │
+│  ┌────────────────────────────────────────────┐     │
+│  │ uv python install 3.11                      │     │
+│  │ uv sync --frozen                            │     │
+│  └────────────────────────────────────────────┘     │
+│                                                      │
+│  步骤三：启动 WebUI                                   │
+│  ┌────────────────────────────────────────────┐     │
+│  │ Windows: .\webui.bat                        │     │
+│  │ macOS/Linux: sh webui.sh                    │     │
+│  └────────────────────────────────────────────┘     │
+│                                                      │
+│  步骤四：启动 API（可选）                             │
+│  ┌────────────────────────────────────────────┐     │
+│  │ uv run python main.py                       │     │
+│  └────────────────────────────────────────────┘     │
+│                                                      │
+│  步骤五：命令行方式（无浏览器）                       │
+│  ┌────────────────────────────────────────────┐     │
+│  │ uv run python cli.py --video-subject        │     │
+│  │   "人工智能如何改变日常生活"                │     │
+│  └────────────────────────────────────────────┘     │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+```
 
 #### 步骤一：克隆代码
 
 ```shell
-git clone https://gitee.com/webb-videos/MoneyPrinterTurbo.git
-cd MoneyPrinterTurbo
+git clone https://gitee.com/webb-videos/webb-videos.git
+cd webb-videos
 ```
 
 #### 步骤二：创建虚拟环境（推荐使用 uv）
@@ -259,6 +372,14 @@ cd MoneyPrinterTurbo
 ```shell
 uv python install 3.11
 uv sync --frozen
+```
+
+如果你暂时不使用 `uv`，也可以继续使用 `venv + pip`：
+
+```shell
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 #### 步骤三：启动 WebUI
@@ -271,6 +392,11 @@ uv sync --frozen
 **macOS / Linux:**
 ```shell
 sh webui.sh
+```
+
+如需允许局域网内其他设备访问：
+```shell
+MPT_WEBUI_HOST=0.0.0.0 sh webui.sh
 ```
 
 #### 步骤四：启动 API 服务（可选）
@@ -293,16 +419,33 @@ uv run python cli.py --help
 
 ## 语音合成 🗣
 
-### 支持的语音服务
+### 支持的语音服务对比
 
-| 服务 | 特点 | 是否需要API Key |
-|------|------|---------------|
-| **Edge TTS** | 免费，微软云端服务 | ❌ 不需要 |
-| **Azure TTS V2** | 高质量，多语言 | ✅ 需要 |
-| **SiliconFlow TTS** | 国产服务 | ✅ 需要 |
-| **Google Gemini TTS** | 免费额度大 | ✅ 需要 |
-| **小米 MiMo TTS** | 小米AI服务 | ✅ 需要 |
-| **ElevenLabs TTS** | 高质量英文 | ✅ 需要 |
+```
+语音服务选择指南
+
+免费程度          质量                中文支持
+  ████           ██████              ██████
+ Edge TTS    ElevenLabs         Azure TTS
+ (免费)       (付费)             (付费)
+
+  ████           ██████              ██████
+ Gemini      Azure TTS          Google
+ (免费额度)    (付费)             Gemini
+
+  ██             ████                ██████
+ 小米          SiliconFlow        小米 MiMo
+ MiMo          (付费)             (付费)
+```
+
+| 服务 | 特点 | 是否需要API Key | 推荐指数 |
+|------|------|---------------|---------|
+| **Edge TTS** | 免费，微软云端服务 | ❌ 不需要 | ⭐⭐⭐⭐⭐ |
+| **Azure TTS V2** | 高质量，多语言 | ✅ 需要 | ⭐⭐⭐⭐⭐ |
+| **SiliconFlow TTS** | 国产服务 | ✅ 需要 | ⭐⭐⭐⭐ |
+| **Google Gemini TTS** | 免费额度大 | ✅ 需要 | ⭐⭐⭐⭐ |
+| **小米 MiMo TTS** | 小米AI服务 | ✅ 需要 | ⭐⭐⭐ |
+| **ElevenLabs TTS** | 高质量英文 | ✅ 需要 | ⭐⭐⭐⭐ |
 
 > 💡 **提示**: 默认使用免费的 Edge TTS，在 WebUI 中显示为 Azure TTS V1
 
@@ -310,20 +453,24 @@ uv run python cli.py --help
 
 ## 字幕生成 📜
 
-### 两种字幕模式
+### 两种字幕模式对比
 
 ```
-┌─────────────────────────────────────────────┐
-│  模式一：edge (推荐)                        │
-│  ├─ 使用 TTS 时间戳生成                     │
-│  ├─ 速度快，不需要 GPU                      │
-│  └─ 适合大多数场景                          │
-├─────────────────────────────────────────────┤
-│  模式二：whisper                            │
-│  ├─ 使用 faster-whisper 转写音频           │
-│  ├─ 更准确的字幕时间轴                      │
-│  └─ 需要 GPU 加速（可选）                   │
-└─────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│                      字幕模式对比                                │
+├─────────────────────────────┬───────────────────────────────────┤
+│      模式一：edge           │        模式二：whisper            │
+│      (推荐，默认)            │        (高精度，可选)             │
+├─────────────────────────────┼───────────────────────────────────┤
+│                             │                                   │
+│  ✓ 使用 TTS 时间戳生成      │  ✓ 使用 faster-whisper 转写     │
+│  ✓ 速度快                   │  ✓ 更准确的时间轴                │
+│  ✓ 不需要 GPU               │  ✓ 需要模型下载                  │
+│  ✓ 适合大多数场景           │  ✓ 需要 GPU 加速（可选）         │
+│                             │                                   │
+│  推荐：日常使用             │  推荐：需要精确字幕              │
+│                             │                                   │
+└─────────────────────────────┴───────────────────────────────────┘
 ```
 
 ### 配置方式
@@ -339,11 +486,28 @@ model_size = "large-v3-turbo"  # 约1.6GB，更快更小
 # model_size = "large-v3"      # 约3GB，更准确
 ```
 
+> 首次使用 Whisper 时，程序会自动从 Hugging Face 下载模型。如果网络无法自动下载，可以从 [Hugging Face](https://huggingface.co/Systran/faster-whisper-large-v3) 手动下载。
+
 ---
 
 ## 背景音乐 🎵
 
 音乐文件位于项目的 `resource/songs` 目录下，你可以：
+
+```
+音乐使用流程
+
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│ 选择音乐来源  │────▶│ 设置音量参数  │────▶│ 生成视频     │
+└──────────────┘     └──────────────┘     └──────────────┘
+      │                    │
+      ▼                    ▼
+  ┌────────┐          ┌────────┐
+  │随机选择 │          │0% - 100%│
+  │自定义   │          │        │
+  │静音     │          │        │
+  └────────┘          └────────┘
+```
 
 - ✅ 使用默认音乐
 - ✅ 添加自己的音乐文件
@@ -371,12 +535,22 @@ upload_post_auto_upload = true
 upload_post_youtube_privacy_status = "public"
 ```
 
+保存配置并重启项目。视频生成完成后，程序会自动发布到已配置的平台。YouTube 可见性可设置为 `public`、`unlisted` 或 `private`。
+
 </details>
 
 <details>
 <summary><b>❓ RuntimeError: No ffmpeg exe could be found</b></summary>
 
-从 https://www.gyan.dev/ffmpeg/builds/ 下载ffmpeg，解压后在 `config.toml` 中设置路径：
+通常情况下，ffmpeg 会被自动下载，并且会被自动检测到。
+但是如果你的环境有问题，无法自动下载，可能会遇到如下错误：
+
+```
+RuntimeError: No ffmpeg exe could be found.
+Install ffmpeg on your system, or set the IMAGEIO_FFMPEG_EXE environment variable.
+```
+
+此时你可以从 https://www.gyan.dev/ffmpeg/builds/ 下载ffmpeg，解压后，在 `config.toml` 中设置 `ffmpeg_path` 为你的实际安装路径即可。
 
 ```toml
 [app]
@@ -388,13 +562,17 @@ ffmpeg_path = "C:\\Users\\webb\\Downloads\\ffmpeg.exe"
 <details>
 <summary><b>❓ OSError: [Errno 24] Too many open files</b></summary>
 
-这是系统文件打开数限制问题，解决方案：
+这个问题是由于系统打开文件数限制导致的，可以通过修改系统的文件打开数限制来解决。
+
+查看当前限制：
 
 ```shell
-# 查看当前限制
 ulimit -n
+```
 
-# 调高限制
+如果过低，可以调高一些：
+
+```shell
 ulimit -n 10240
 ```
 
@@ -406,7 +584,7 @@ ulimit -n 10240
 从 [Hugging Face](https://huggingface.co/Systran/faster-whisper-large-v3) 手动下载模型，解压后放到：
 
 ```
-MoneyPrinterTurbo
+webb-videos
   ├─models
   │   └─whisper-large-v3
   │          config.json
@@ -423,39 +601,73 @@ MoneyPrinterTurbo
 ## 项目架构 🏗️
 
 ```
-MoneyPrinterTurbo/
-├── 📁 app/                    # 应用核心代码
-│   ├── 📁 config/             # 配置管理
-│   ├── 📁 controllers/        # 控制器层
-│   ├── 📁 models/             # 数据模型
-│   ├── 📁 services/           # 业务服务
-│   └── 📁 utils/              # 工具函数
-├── 📁 webui/                  # Web界面
-├── 📁 docs/                   # 文档
-├── 📁 resource/               # 资源文件
-│   ├── 📁 fonts/              # 字体文件
-│   ├── 📁 songs/              # 背景音乐
-│   └── 📁 public/             # 公共资源
-├── 📄 main.py                 # API服务入口
-├── 📄 cli.py                  # 命令行工具
-└── 📄 webui.bat/sh            # WebUI启动脚本
+                    webb-videos 项目架构
+                          │
+          ┌───────────────┼───────────────┐
+          │               │               │
+          ▼               ▼               ▼
+   ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+   │  app/        │ │  webui/      │ │  resource/   │
+   │  核心代码    │ │  Web界面     │ │  资源文件    │
+   ├──────────────┤ ├──────────────┤ ├──────────────┤
+   │ config/      │ │ Main.py      │ │ fonts/       │
+   │ controllers/ │ │ styles.css   │ │ songs/       │
+   │ models/      │ │ i18n/        │ │ public/      │
+   │ services/    │ │              │ │              │
+   │ utils/       │ │              │ │              │
+   └──────────────┘ └──────────────┘ └──────────────┘
+          │               │               │
+          └───────────────┼───────────────┘
+                          │
+                    ┌──────────────┐
+                    │  docs/       │
+                    │  文档        │
+                    └──────────────┘
+                          │
+          ┌───────────────┼───────────────┐
+          │               │               │
+          ▼               ▼               ▼
+   ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+   │  main.py     │ │  cli.py      │ │  webui.bat/  │
+   │  API入口     │ │  命令行      │ │  webui.sh    │
+   └──────────────┘ └──────────────┘ └──────────────┘
 ```
+
+### 目录说明
+
+| 目录/文件 | 说明 |
+|-----------|------|
+| `app/` | 应用核心代码 |
+| `app/config/` | 配置管理 |
+| `app/controllers/` | 控制器层 |
+| `app/models/` | 数据模型 |
+| `app/services/` | 业务服务 |
+| `app/utils/` | 工具函数 |
+| `webui/` | Web界面 |
+| `docs/` | 文档 |
+| `resource/` | 资源文件 |
+| `resource/fonts/` | 字体文件 |
+| `resource/songs/` | 背景音乐 |
+| `main.py` | API服务入口 |
+| `cli.py` | 命令行工具 |
+| `webui.bat/sh` | WebUI启动脚本 |
 
 ---
 
 ## 技术栈 🔧
 
+| 技术 | 用途 | 版本 |
+|------|------|------|
+| **Python** | 核心编程语言 | 3.11+ |
+| **Streamlit** | WebUI 框架 | latest |
+| **FastAPI** | API 框架 | latest |
+| **Docker** | 容器化部署 | latest |
+| **uv** | Python 包管理 | latest |
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-
----
-
-## 反馈建议 📢
-
-- 📝 提交 [Issue](https://gitee.com/webb-videos/MoneyPrinterTurbo/issues)
-- 🔀 提交 [Pull Request](https://gitee.com/webb-videos/MoneyPrinterTurbo/pulls)
 
 ---
 
