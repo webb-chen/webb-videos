@@ -12,10 +12,10 @@ from packaging.version import InvalidVersion, Version
 
 
 LATEST_RELEASE_API_URL: Final = (
-    "https://api.github.com/repos/harry0703/MoneyPrinterTurbo/releases/latest"
+    "https://api.github.com/repos/webb/MoneyPrinterTurbo/releases/latest"
 )
 LATEST_RELEASE_PAGE_URL: Final = (
-    "https://github.com/harry0703/MoneyPrinterTurbo/releases/latest"
+    "https://gitee.com/webb-videos/MoneyPrinterTurbo/releases/latest"
 )
 # 更新检查只是辅助功能，网络异常不能明显拖慢本地 WebUI。连接与读取分别限制
 # 超时时间，既允许 GitHub 在普通网络下完成响应，也避免离线环境长时间等待。
